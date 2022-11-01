@@ -14,3 +14,9 @@ rails new admin-on-rails
   source ~/.profile
   npm install -g jshint
   npm install --global yarn
+
+rails generate controller home index
+
+config/routes.rb
+  # config/routes.rb
+  root 'home#index'
