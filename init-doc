@@ -1,3 +1,16 @@
+sudo apt install nodejs npm
+
+npm install --global yarn
+
 rvm install 2.6.10
 gem install rails -v 6.0.6
 rails new admin-on-rails
+
+# ERROR => Webpacker configuration file not found config/webpacker.yml.
+#  Please run rails webpacker:install Error: No such file or directory @ rb_sysopen
+  mkdir ~/.npm-global
+  npm config set prefix '~/.npm-global'
+  export PATH=~/.npm-global/bin:$PATH
+  source ~/.profile
+  npm install -g jshint
+  npm install --global yarn
