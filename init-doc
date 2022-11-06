@@ -3,10 +3,18 @@
 # setup
 sudo apt-get install software-properties-common curl python build-essential
 
+
+
+
+
 # On proyects root
 # Delete yarn_lock.json
 # Delete node_modules/
 rm -rf node_modules && rm yarn.lock
+
+
+
+
 
 # NVM (Node Version Manager)
 sudo apt update
@@ -14,6 +22,8 @@ sudo apt purge nodejs
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
 source ~/.zshrc
 nvm ls-remote
+
+
 
 
 
@@ -29,13 +39,15 @@ sudo ln -s "$(which node)" /usr/bin/node
 npm install --global yarn@1.22.17
 yarn install --check-files
 
-npm i -g npm-check-updates
-ncu -u
-npm install
+npm i -g npm-check-updates && ncu -u && npm install
 yarn add bootstrap@4.3.1 jquery popper.js
 
-
-
+# FIX
+nvm use --delete-prefix v16.13.1
+npm install --global yarn@1.22.17
+npm i -g npm-check-updates && ncu -u && npm install
+yarn install --check-files
+# FIX
 
 ####################################################################################################################################################################################
 # init
