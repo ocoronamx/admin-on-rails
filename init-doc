@@ -49,6 +49,12 @@ npm i -g npm-check-updates && ncu -u && npm install
 yarn install --check-files
 # FIX
 
+# Add Bootstrap 4 to Rails 6 without configuring webpack
+https://medium.com/daily-web-dev/add-bootstrap-4-to-rails-6-without-configuring-webpack-6be1e21c9b9
+
+yarn add @popperjs/core
+npm install angular@1.8.2
+
 ####################################################################################################################################################################################
 # init
 
