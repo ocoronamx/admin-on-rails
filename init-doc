@@ -77,6 +77,8 @@ rails new admin-on-rails
 
 rails generate controller home index
 
+rails generate controller demo forms
+
 config/routes.rb
   # config/routes.rb
   root 'home#index'

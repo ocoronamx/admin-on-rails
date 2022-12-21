@@ -58,6 +58,7 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
+    angularjs-rails (1.8.0)
     autoprefixer-rails (10.4.7.0)
       execjs (~> 2)
     bindex (0.8.1)
@@ -216,6 +217,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  angularjs-rails
   bootsnap (>= 1.4.2)
   bootstrap (~> 4.5.2)
   byebug
